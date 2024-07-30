@@ -216,7 +216,7 @@
         }
         .work-info:hover {
             background-color: grey;
-            color: ;
+            color: grey;
             transform: scale(1.1);
         }
         .work-info h4 {
@@ -306,11 +306,92 @@
             display: inline-block;
             margin: 0 15px;
         }
+        .contact {
+            background-color: whitesmoke;
+            color: black;
+            padding: 4rem 9%;
+        }
+        .contact .row {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+        .contact .row i {
+            font-size: 2rem;
+            color: #e6cbd8;
+        }
+        .contact .info {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+        .contact .info .head {
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+        .contact .info .sub-title {
+            font-size: 1rem;
+            color: gray;
+        }
+        .contact .column.right {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .contact .text {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+        }
+        .contact form {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            width: 100%;
+            max-width: 600px;
+        }
+        .contact .fields {
+            display: flex;
+            gap: 1rem;
+        }
+        .contact .field {
+            flex: 1;
+        }
+        .contact .field input, .contact .field textarea {
+            width: 100%;
+            padding: 0.8rem;
+            border: 1px solid #e6cbd8;
+            border-radius: 0.5rem;
+            font-size: 1rem;
+            color: black;
+        }
+        .contact .button-area {
+            display: flex;
+            justify-content: center;
+        }
+        .contact .button-area button {
+            background-color: #e6cbd8;
+            color: white;
+            padding: 0.8rem 2rem;
+            border: none;
+            border-radius: 0.5rem;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+        }
+        .contact .button-area button:hover {
+            background-color: gray;
+        }
+        .menu-btn {
+        display: block;
+        z-index: 999;
+    }
     </style>
 </head>
 <body>
     <header>
-        <a href="#" class="logo"<Lakshmi saranya></a>
+        <a href="#" class="logo">Lakshmi Saranya</a>
         <nav>
             <a href="#home">Home</a>
             <a href="#about">About</a>
@@ -337,9 +418,9 @@
     <section class="myworks" id="projects">
         <h1>Projects</h1>
         <div class="work-container">
-                       <div class="work-info">
-                <h4>hotel booking system</h4>
-                <p>An  hotel room booking system allowing users to book a room and order food in the hotel</p>
+            <div class="work-info">
+                <h4>Hotel Booking System</h4>
+                <p>A hotel room booking system allowing users to book a room and order food in the hotel.</p>
             </div>
             <div class="work-info">
                 <h4>Online Courses Platform</h4>
@@ -351,12 +432,50 @@
             </div>
         </div>
     </section>
-    <footer>
+    <section class="contact" id="contact">
         <h1>Contact Me</h1>
-        <div class="social">
-            <a href="https://in.linkedin.com/in/lakshmi-saranya-saranya-372910258"></a>
-            <a href="https://github.com/saranyavivid></a>
+        <div class="row">
+            <i class="fas fa-envelope"></i>
+            <div class="info">
+                <div class="head">Email</div>
+                <div class="sub-title">Lakshmisaranya@gmail.com</div>
+            </div>
         </div>
+        <div class="column right">
+            <div class="text">Message me</div>
+            <form action="#">
+                <div class="fields">
+                    <div class="field name">
+                        <input type="text" placeholder="Name" required>
+                    </div>
+                    <div class="field email">
+                        <input type="email" placeholder="Email" required>
+                    </div>
+                </div>
+                <div class="field">
+                    <input type="text" placeholder="Subject" required>
+                </div>
+                <div class="field textarea">
+                    <textarea cols="30" rows="10" placeholder="Message.." required></textarea>
+                </div>
+                <div class="button-area">
+                    <button type="submit">Send Message</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <footer>
+        
+        <div class="social">
+            <div class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+            <i class="fab fa-linkedin"></i>
+            <i class="fab fa-github"></i>
+            <a href="https://in.linkedin.com/in/lakshmi-saranya-saranya-372910258"></a>
+            <a href="https://github.com/saranyavivid"></a>
+        </div>
+        
         <ul>
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
